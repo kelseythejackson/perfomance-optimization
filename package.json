@@ -1,0 +1,34 @@
+{
+  "name": "site-optimization",
+  "version": "1.0.0",
+  "description": "Use Node, npm, PhantomJS and Phantomas to measure the number of requests and size of files needed to render a web page. This simple test is one way to help optimize a web page for download speed.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "phantomas http://localhost:8080/ --modules=Metrics --runs 5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "phantomas": "^1.15.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-image": "^2.7.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treehouse-projects/optimization-testing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/treehouse-projects/optimization-testing/issues"
+  },
+  "homepage": "https://github.com/treehouse-projects/optimization-testing#readme"
+}
