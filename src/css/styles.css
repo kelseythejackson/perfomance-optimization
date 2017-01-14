@@ -7494,6 +7494,41 @@ body {
   background-size: 100%;
   background-position: 0 -150px; }
 
+.modal-thumb-1 {
+  background-image: url("../img/avatars/avatar-sprite.jpg");
+  background-size: 100%;
+  background-position: 0 0; }
+
+.modal-thumb-2 {
+  background-image: url("../img/avatars/avatar-sprite.jpg");
+  background-size: 100%;
+  background-position: 0 -300px; }
+
+.modal-thumb-3 {
+  background-image: url("../img/avatars/avatar-sprite.jpg");
+  background-size: 100%;
+  background-position: 0 -150px; }
+
+.modal-thumb-4 {
+  background-image: url("../img/avatars/avatar-sprite.jpg");
+  background-size: 100%;
+  background-position: 0 -150px; }
+
+.modal-thumb-5 {
+  background-image: url("../img/avatars/avatar-sprite.jpg");
+  background-size: 100%;
+  background-position: 0 -75px; }
+
+.modal-thumb-6 {
+  background-image: url("../img/avatars/avatar-sprite.jpg");
+  background-size: 100%;
+  background-position: 0 -450px; }
+
+.modal-thumb-7 {
+  background-image: url("../img/avatars/avatar-sprite.jpg");
+  background-size: 100%;
+  background-position: 0 -375px; }
+
 .image-grid {
   max-width: 1440px;
   margin: auto; }

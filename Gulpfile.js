@@ -4,7 +4,7 @@ const gulp = require('gulp'),
     sass = require('gulp-sass'),
     csso = require('gulp-csso'),
     rename = require('gulp-rename'),
-    image = require('gulp-image');
+    image = require('gulp-imagemin');
 
 gulp.task('concat', () => {
     return gulp.src(['./src/js/jquery.js', './src/js/fastclick.js', './src/js/foundation.js', './src/js/foundation.equalizer.js', './src/js/foundation.reveal.js', './src/js/scripts.js'])
@@ -33,7 +33,19 @@ gulp.task('csso', ['sass'], () => {
 });
 
 gulp.task('shrink', ()=> {
-    gulp.src('./src/img/photos/*')
+    return gulp.src('./src/img/photos/*')
         .pipe(image())
         .pipe(gulp.dest('./public/img/photos/'))
 });
+
+gulp.task('watchFiles', ()=> {
+    gulp.watch('./src/js/*.js', ['uglify']);
+    gulp.watch('./src/scss/**/*.scss', ['csso']);
+});
+
+gulp.task('serve', ['watchFiles']);
+
+gulp.task('default', ()=> {
+    return gulp.start(['csso', 'uglify']);
+});
+
