@@ -7495,7 +7495,8 @@ body {
   background-position: 0 -150px; }
 
 .image-grid {
-  padding: 0 3rem; }
+  max-width: 1440px;
+  margin: auto; }
 
 .image-grid h2 {
   color: #495560;
@@ -7564,7 +7565,7 @@ footer {
   padding: 1.5rem 3rem; }
 
 footer .row {
-  max-width: 100%; }
+  max-width: 1440px; }
 
 footer .columns {
   padding-left: 0; }
